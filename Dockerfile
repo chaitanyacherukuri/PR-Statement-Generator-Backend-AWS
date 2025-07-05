@@ -12,6 +12,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
+# Accept build arguments and set as environment variables
+ARG GROQ_API_KEY
+ENV GROQ_API_KEY=$GROQ_API_KEY
+
 # Expose port
 EXPOSE 8000
 
