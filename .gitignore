@@ -217,9 +217,6 @@ temp/
 .aws/
 aws-exports.js
 
-# Docker
-.dockerignore
-
 # Terraform
 *.tfstate
 *.tfstate.*
@@ -227,7 +224,6 @@ aws-exports.js
 .terraform.lock.hcl
 
 # Local environment files
-.env.example
 .env.sample
 .env.template
 
